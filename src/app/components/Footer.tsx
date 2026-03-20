@@ -37,11 +37,6 @@ export function Footer() {
                 </a>
               </li>
               <li>
-                <a href="/case-study" className="transition-colors underline" style={{ color: '#7e91cf' }} onMouseEnter={(e) => e.currentTarget.style.opacity = '0.7'} onMouseLeave={(e) => e.currentTarget.style.opacity = '1'}>
-                  企業導入事例 companies
-                </a>
-              </li>
-              <li>
                 <a href="/municipality" className="transition-colors underline" style={{ color: '#7e91cf' }} onMouseEnter={(e) => e.currentTarget.style.opacity = '0.7'} onMouseLeave={(e) => e.currentTarget.style.opacity = '1'}>
                   自治体 regional towns
                 </a>

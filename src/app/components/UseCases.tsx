@@ -20,7 +20,7 @@ export function UseCases() {
       description: 'お客様のリアルな声で、次の顧客と出会う',
       image: customerImage,
       color: 'from-purple-500 to-pink-500',
-      link: '/case-study',
+      link: '#',
     },
     {
       icon: GraduationCap,

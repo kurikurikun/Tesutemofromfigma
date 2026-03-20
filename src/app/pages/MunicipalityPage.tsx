@@ -170,7 +170,7 @@ export function MunicipalityPage() {
             >
               <div className="aspect-video bg-gradient-to-br from-[#7e91cf] to-[#5a6eb3] rounded-3xl overflow-hidden shadow-2xl">
                 <iframe
-                  src="https://player.vimeo.com/video/1017754838?h=2df374323e&badge=0&autopause=0&player_id=0&app_id=58479"
+                  src="https://player.vimeo.com/video/1010426949?h=34d0ad59fb&badge=0&autopause=0&player_id=0&app_id=58479"
                   className="w-full h-full"
                   frameBorder="0"
                   allow="autoplay; fullscreen; picture-in-picture"
@@ -331,12 +331,12 @@ export function MunicipalityPage() {
               </button>
 
               <Slider ref={videoPreviewSliderRef} {...sliderSettings}>
-                {/* Video 1 - Original */}
+                {/* Video 1 */}
                 <div>
                   <div className="px-4">
                     <div className="aspect-video bg-gray-900 rounded-2xl overflow-hidden shadow-xl">
                       <iframe
-                        src="https://player.vimeo.com/video/1019675789?h=8ca81d7847&badge=0&autopause=0&player_id=0&app_id=58479"
+                        src="https://player.vimeo.com/video/1010823028?h=680857e13b&badge=0&autopause=0&player_id=0&app_id=58479"
                         className="w-full h-full"
                         frameBorder="0"
                         allow="autoplay; fullscreen; picture-in-picture"
@@ -346,42 +346,12 @@ export function MunicipalityPage() {
                   </div>
                 </div>
 
-                {/* Video 2 - New */}
+                {/* Video 2 */}
                 <div>
                   <div className="px-4">
                     <div className="aspect-video bg-gray-900 rounded-2xl overflow-hidden shadow-xl">
                       <iframe
-                        src="https://player.vimeo.com/video/1082523091?badge=0&autopause=0&player_id=0&app_id=58479"
-                        className="w-full h-full"
-                        frameBorder="0"
-                        allow="autoplay; fullscreen; picture-in-picture"
-                        allowFullScreen
-                      />
-                    </div>
-                  </div>
-                </div>
-
-                {/* Video 3 - New */}
-                <div>
-                  <div className="px-4">
-                    <div className="aspect-video bg-gray-900 rounded-2xl overflow-hidden shadow-xl">
-                      <iframe
-                        src="https://player.vimeo.com/video/1049154514?badge=0&autopause=0&player_id=0&app_id=58479"
-                        className="w-full h-full"
-                        frameBorder="0"
-                        allow="autoplay; fullscreen; picture-in-picture"
-                        allowFullScreen
-                      />
-                    </div>
-                  </div>
-                </div>
-
-                {/* Video 4 - New */}
-                <div>
-                  <div className="px-4">
-                    <div className="aspect-video bg-gray-900 rounded-2xl overflow-hidden shadow-xl">
-                      <iframe
-                        src="https://player.vimeo.com/video/1019649377?badge=0&autopause=0&player_id=0&app_id=58479"
+                        src="https://player.vimeo.com/video/1050610140?h=a5b8353977&badge=0&autopause=0&player_id=0&app_id=58479"
                         className="w-full h-full"
                         frameBorder="0"
                         allow="autoplay; fullscreen; picture-in-picture"
@@ -407,7 +377,7 @@ export function MunicipalityPage() {
               <div className="bg-gradient-to-br from-[#e8f0fe] to-[#d0e1fd] rounded-3xl p-6 shadow-xl">
                 <div className="aspect-[9/16] bg-gray-900 rounded-2xl overflow-hidden shadow-xl">
                   <iframe
-                    src="https://player.vimeo.com/video/1020046986?h=83e6b0fedd&badge=0&autopause=0&player_id=0&app_id=58479"
+                    src="https://player.vimeo.com/video/1015054920?h=aa8a72196a&badge=0&autopause=0&player_id=0&app_id=58479"
                     className="w-full h-full"
                     frameBorder="0"
                     allow="autoplay; fullscreen; picture-in-picture"
@@ -420,7 +390,7 @@ export function MunicipalityPage() {
               <div className="bg-gradient-to-br from-[#e8f0fe] to-[#d0e1fd] rounded-3xl p-6 shadow-xl">
                 <div className="aspect-[9/16] bg-gray-900 rounded-2xl overflow-hidden shadow-xl">
                   <iframe
-                    src="https://player.vimeo.com/video/1049144140?badge=0&autopause=0&player_id=0&app_id=58479"
+                    src="https://player.vimeo.com/video/1013400453?h=89cb5fd807&badge=0&autopause=0&player_id=0&app_id=58479"
                     className="w-full h-full"
                     frameBorder="0"
                     allow="autoplay; fullscreen; picture-in-picture"
@@ -433,7 +403,7 @@ export function MunicipalityPage() {
               <div className="bg-gradient-to-br from-[#e8f0fe] to-[#d0e1fd] rounded-3xl p-6 shadow-xl">
                 <div className="aspect-[9/16] bg-gray-900 rounded-2xl overflow-hidden shadow-xl">
                   <iframe
-                    src="https://player.vimeo.com/video/1169470823?h=af1c20547e&badge=0&autopause=0&player_id=0&app_id=58479"
+                    src="https://player.vimeo.com/video/1050617850?h=2e4031d8bd&badge=0&autopause=0&player_id=0&app_id=58479"
                     className="w-full h-full"
                     frameBorder="0"
                     allow="autoplay; fullscreen; picture-in-picture"

@@ -20,9 +20,6 @@ export function Header() {
         </div>
         
         <nav className="hidden md:flex items-center gap-8">
-          <a href="/case-study" className="text-lg hover:opacity-70 transition-opacity" style={{ color: '#7e91cf' }}>
-            導入事例 for 企業
-          </a>
           <a href="/recruitment" className="text-lg hover:opacity-70 transition-opacity" style={{ color: '#7e91cf' }}>
             採用促進 for 企業
           </a>
@@ -57,14 +54,6 @@ export function Header() {
             className="md:hidden bg-white border-t border-gray-100 overflow-hidden"
           >
             <nav className="flex flex-col px-6 py-4 space-y-4">
-              <a 
-                href="/case-study" 
-                className="text-lg hover:opacity-70 transition-opacity py-2" 
-                style={{ color: '#7e91cf' }}
-                onClick={() => setMobileMenuOpen(false)}
-              >
-                導入事例 for 企業
-              </a>
               <a 
                 href="/recruitment" 
                 className="text-lg hover:opacity-70 transition-opacity py-2" 
