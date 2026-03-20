@@ -1,8 +1,8 @@
 import { motion } from 'motion/react';
 import { UserPlus, TrendingUp, GraduationCap, MapPin } from 'lucide-react';
 import { ImageWithFallback } from './figma/ImageWithFallback';
-import recruitImage from 'figma:asset/5cc6f68e65b026ca288e5d61a109c4986c13bd8b.png';
-import customerImage from 'figma:asset/b6870bc75d96781841096514a5a6fb31fb15370a.png';
+import recruitImage from '@/assets/5cc6f68e65b026ca288e5d61a109c4986c13bd8b.png';
+import customerImage from '@/assets/b6870bc75d96781841096514a5a6fb31fb15370a.png';
 
 export function UseCases() {
   const useCases = [

@@ -1,8 +1,8 @@
 import { useState } from 'react';
 import { motion } from 'motion/react';
 import { Mail, User, Building, MessageSquare, Send, CheckCircle } from 'lucide-react';
-import chrisPhoto from 'figma:asset/5d0da16a4e4230023464c5fbd3449b1fe459a92b.png';
-import kinoshitaPhoto from 'figma:asset/71bea6c1621878f2da0e2569839aca8ca5d673fb.png';
+import chrisPhoto from '@/assets/5d0da16a4e4230023464c5fbd3449b1fe459a92b.png';
+import kinoshitaPhoto from '@/assets/71bea6c1621878f2da0e2569839aca8ca5d673fb.png';
 
 interface ContactProps {
   organizationLabel?: string;

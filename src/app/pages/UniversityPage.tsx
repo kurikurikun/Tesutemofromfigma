@@ -5,7 +5,7 @@ import { Contact } from '../components/Contact';
 import { Footer } from '../components/Footer';
 import Slider from 'react-slick';
 import { useRef } from 'react';
-import kansaiLogo from 'figma:asset/7dc70f324689cc10dd0bca8896ac599ce9ead2b2.png';
+import kansaiLogo from '@/assets/7dc70f324689cc10dd0bca8896ac599ce9ead2b2.png';
 
 export function UniversityPage() {
   const handleContactClick = (source: string) => {

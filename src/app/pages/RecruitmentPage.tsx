@@ -5,7 +5,7 @@ import { Contact } from '../components/Contact';
 import { Footer } from '../components/Footer';
 import Slider from 'react-slick';
 import { useRef } from 'react';
-import mynaviImage from 'figma:asset/4f7a5f3047b013fe694cbb11edb6c98e0583ae76.png';
+import mynaviImage from '@/assets/4f7a5f3047b013fe694cbb11edb6c98e0583ae76.png';
 
 export function RecruitmentPage() {
   const handleContactClick = (source: string) => {

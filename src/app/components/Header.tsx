@@ -1,6 +1,6 @@
 import { motion, AnimatePresence } from 'motion/react';
 import { Menu, X } from 'lucide-react';
-import logo from 'figma:asset/a291da8460bd685d634f4adc10e7a3e85bae75d4.png';
+import logo from '@/assets/a291da8460bd685d634f4adc10e7a3e85bae75d4.png';
 import { useState } from 'react';
 
 export function Header() {
