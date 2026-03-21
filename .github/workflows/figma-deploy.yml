@@ -1,0 +1,65 @@
+name: Deploy Figma Branch to GitHub Pages
+
+on:
+  push:
+    branches: [figma]
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: "pages"
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout figma branch
+        uses: actions/checkout@v4
+        with:
+          ref: figma
+
+      - name: Checkout scripts and config from main
+        uses: actions/checkout@v4
+        with:
+          ref: main
+          path: _main_ref
+
+      - name: Overlay patch script and 404.html from main
+        run: |
+          # Copy the patch script
+          mkdir -p scripts
+          cp _main_ref/scripts/fix-for-ghpages.sh scripts/fix-for-ghpages.sh
+          # Copy 404.html for SPA routing
+          mkdir -p public
+          cp _main_ref/public/404.html public/404.html
+          # Clean up
+          rm -rf _main_ref
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Patch Figma output for GitHub Pages
+        run: bash scripts/fix-for-ghpages.sh
+
+      - run: npm install
+      - run: npm run build
+
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: ./dist
+
+  deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    needs: build
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
