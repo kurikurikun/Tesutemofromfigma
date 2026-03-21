@@ -2,6 +2,7 @@ import { motion, AnimatePresence } from 'motion/react';
 import { Menu, X } from 'lucide-react';
 import logo from '@/assets/a291da8460bd685d634f4adc10e7a3e85bae75d4.png';
 import { useState } from 'react';
+import { Link } from 'react-router';
 
 export function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -20,15 +21,15 @@ export function Header() {
         </div>
         
         <nav className="hidden md:flex items-center gap-8">
-          <a href="/recruitment" className="text-lg hover:opacity-70 transition-opacity" style={{ color: '#7e91cf' }}>
+          <Link to="/recruitment" className="text-lg hover:opacity-70 transition-opacity" style={{ color: '#7e91cf' }}>
             採用促進 for 企業
-          </a>
-          <a href="/municipality" className="text-lg hover:opacity-70 transition-opacity" style={{ color: '#7e91cf' }}>
+          </Link>
+          <Link to="/municipality" className="text-lg hover:opacity-70 transition-opacity" style={{ color: '#7e91cf' }}>
             for 自治体
-          </a>
-          <a href="/university" className="text-lg hover:opacity-70 transition-opacity" style={{ color: '#7e91cf' }}>
+          </Link>
+          <Link to="/university" className="text-lg hover:opacity-70 transition-opacity" style={{ color: '#7e91cf' }}>
             for 大学
-          </a>
+          </Link>
           <a href="#contact" className="px-6 py-2.5 bg-gray-900 text-white text-lg rounded-full hover:bg-gray-800 transition-colors">
             はじめる
           </a>
@@ -54,30 +55,30 @@ export function Header() {
             className="md:hidden bg-white border-t border-gray-100 overflow-hidden"
           >
             <nav className="flex flex-col px-6 py-4 space-y-4">
-              <a 
-                href="/recruitment" 
-                className="text-lg hover:opacity-70 transition-opacity py-2" 
+              <Link
+                to="/recruitment"
+                className="text-lg hover:opacity-70 transition-opacity py-2"
                 style={{ color: '#7e91cf' }}
                 onClick={() => setMobileMenuOpen(false)}
               >
                 採用促進 for 企業
-              </a>
-              <a 
-                href="/municipality" 
-                className="text-lg hover:opacity-70 transition-opacity py-2" 
+              </Link>
+              <Link
+                to="/municipality"
+                className="text-lg hover:opacity-70 transition-opacity py-2"
                 style={{ color: '#7e91cf' }}
                 onClick={() => setMobileMenuOpen(false)}
               >
                 for 自治体
-              </a>
-              <a 
-                href="/university" 
-                className="text-lg hover:opacity-70 transition-opacity py-2" 
+              </Link>
+              <Link
+                to="/university"
+                className="text-lg hover:opacity-70 transition-opacity py-2"
                 style={{ color: '#7e91cf' }}
                 onClick={() => setMobileMenuOpen(false)}
               >
                 for 大学
-              </a>
+              </Link>
               <a 
                 href="#contact" 
                 className="px-6 py-2.5 bg-gray-900 text-white text-lg rounded-full hover:bg-gray-800 transition-colors text-center"
