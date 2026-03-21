@@ -15,10 +15,9 @@ export function Header() {
       className="fixed top-0 left-0 right-0 z-50 bg-white/80 backdrop-blur-md border-b border-gray-100 p-[0px]"
     >
       <div className="max-w-7xl mx-auto px-6 lg:px-12 py-4 flex items-center justify-between">
-        <div className="flex items-center gap-2">
+        <Link to="/" className="flex items-center gap-2">
           <img src={logo} alt="Tesutemo" className="h-12" />
-          
-        </div>
+        </Link>
         
         <nav className="hidden md:flex items-center gap-8">
           <Link to="/recruitment" className="text-lg hover:opacity-70 transition-opacity" style={{ color: '#7e91cf' }}>
