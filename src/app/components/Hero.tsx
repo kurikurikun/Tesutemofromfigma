@@ -1,11 +1,11 @@
 import { motion } from 'motion/react';
 import { useEffect, useRef } from 'react';
 import { ImageWithFallback } from './figma/ImageWithFallback';
-import image1 from '@/assets/3c126e1bc058009e2983a362b6e8d773e4e67605.png';
-import image2 from '@/assets/2fad9edad6112139233ee09eb6b3defe54d0c039.png';
-import image3 from '@/assets/9c66842611afaf80a1360179cfc99cad3268bcc0.png';
-import image4 from '@/assets/3ce8ea23f34b75c4a480115989795adf3ae4e8bd.png';
-import image5 from '@/assets/efdc294a577106acd325b7a657a01a6aacc8f514.png';
+import image1 from 'figma:asset/3c126e1bc058009e2983a362b6e8d773e4e67605.png';
+import image2 from 'figma:asset/2fad9edad6112139233ee09eb6b3defe54d0c039.png';
+import image3 from 'figma:asset/9c66842611afaf80a1360179cfc99cad3268bcc0.png';
+import image4 from 'figma:asset/3ce8ea23f34b75c4a480115989795adf3ae4e8bd.png';
+import image5 from 'figma:asset/efdc294a577106acd325b7a657a01a6aacc8f514.png';
 
 export function Hero() {
   const carouselImages = [

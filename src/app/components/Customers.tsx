@@ -1,32 +1,25 @@
 import { motion } from 'motion/react';
+import fujinomiyaLogo from 'figma:asset/e1a0e97f16fc4b1f72bc942e4ccce7e307a31e45.png';
+import otsukiLogo from 'figma:asset/bf4051cc8021842035a84efedca386b1ba93c23a.png';
+import kansaiLogo from 'figma:asset/7dc70f324689cc10dd0bca8896ac599ce9ead2b2.png';
+import wasedaLogo from 'figma:asset/3145ea66b2626018cecc84d7e04a75b4e47fc4d6.png';
+import { ImageWithFallback } from './figma/ImageWithFallback';
 
 export function Customers() {
-  // Placeholder customer logos
+  // Customer logos with images
   const customers = [
-    { name: '株式会社A' },
-    { name: '大学B' },
-    { name: '自治体C' },
-    { name: '株式会社D' },
-    { name: 'スタートアップE' },
-    { name: '団体F' },
+    { name: '富士宮市', logo: fujinomiyaLogo },
+    { name: '大月町', logo: otsukiLogo },
+    { name: '関西大学', logo: kansaiLogo },
+    { name: '早稲田大学', logo: wasedaLogo },
   ];
 
   // Client testimonials
   const testimonials = [
     {
       quote: '学生の人柄や授業のインパクトなど、AI生成では出せない生のインタビューのリアルさや親近感がこのテステモの価値だなと改めて感じました！',
-      author: 'クライアント様',
-      company: '企業名',
-    },
-    {
-      quote: '学生の人柄や授業のインパクトなど、AI生成では出せない生のインタビューのリアルさや親近感がこのテステモの価値だなと改めて感じました！',
-      author: 'クライアント様',
-      company: '企業名',
-    },
-    {
-      quote: '学生の人柄や授業のインパクトなど、AI生成では出せない生のインタビューのリアルさや親近感がこのテステモの価値だなと改めて感じました！',
-      author: 'クライアント様',
-      company: '企業名',
+      author: '関西大学',
+      company: '学部・大学院事務グループ',
     },
   ];
 
@@ -51,7 +44,7 @@ export function Customers() {
           </p>
         </motion.div>
 
-        <div className="flex flex-wrap justify-center items-center gap-6 lg:gap-8 mb-16">
+        <div className="flex justify-center items-center gap-8 lg:gap-12 mb-16">
           {customers.map((customer, index) => (
             <motion.div
               key={index}
@@ -61,10 +54,12 @@ export function Customers() {
               transition={{ duration: 0.5, delay: index * 0.1 }}
               className="flex-shrink-0"
             >
-              <div className="bg-gray-50 rounded-xl px-8 py-6 hover:bg-gray-100 transition-colors duration-300 border border-gray-200">
-                <span className="text-gray-700 text-base font-medium whitespace-nowrap">
-                  {customer.name}
-                </span>
+              <div className="bg-white rounded-xl px-4 py-3 hover:shadow-md transition-all duration-300 border border-gray-200 flex items-center justify-center">
+                <ImageWithFallback
+                  src={customer.logo}
+                  alt={customer.name}
+                  className="h-10 w-auto object-contain"
+                />
               </div>
             </motion.div>
           ))}
@@ -81,7 +76,7 @@ export function Customers() {
           <h3 className="text-2xl lg:text-3xl font-bold text-gray-900 text-center mb-12">
             お客様の声
           </h3>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 lg:gap-8 max-w-6xl mx-auto">
+          <div className="flex justify-center max-w-2xl mx-auto">
             {testimonials.map((testimonial, index) => (
               <motion.div
                 key={index}
@@ -89,6 +84,7 @@ export function Customers() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.5, delay: index * 0.1 }}
+                className="w-full"
               >
                 <div className="bg-gradient-to-br from-gray-50 to-white rounded-2xl p-6 lg:p-8 shadow-lg border border-gray-200 hover:border-[#e95228]/30 transition-all h-full flex flex-col">
                   {/* Quote icon */}

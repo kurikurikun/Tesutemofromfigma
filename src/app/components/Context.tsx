@@ -1,6 +1,6 @@
 import { motion } from 'motion/react';
 import { Video, Users, Heart, ArrowRight, AlertCircle, Sparkles } from 'lucide-react';
-import videoScreenshot from '@/assets/120490623265b746393032cad54594c2cd947ff7.png';
+import videoScreenshot from 'figma:asset/120490623265b746393032cad54594c2cd947ff7.png';
 
 export function Context() {
   const howSteps = [

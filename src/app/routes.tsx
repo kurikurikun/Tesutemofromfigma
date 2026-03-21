@@ -6,34 +6,29 @@ import { RecruitmentPage } from "./pages/RecruitmentPage";
 import { CaseStudyPage } from "./pages/CaseStudyPage";
 import { ContactAdmin } from "./components/ContactAdmin";
 
-export const router = createBrowserRouter(
-  [
-    {
-      path: "/",
-      Component: LandingPage,
-    },
-    {
-      path: "/university",
-      Component: UniversityPage,
-    },
-    {
-      path: "/municipality",
-      Component: MunicipalityPage,
-    },
-    {
-      path: "/recruitment",
-      Component: RecruitmentPage,
-    },
-    {
-      path: "/case-study",
-      Component: CaseStudyPage,
-    },
-    {
-      path: "/admin/contacts",
-      Component: ContactAdmin,
-    },
-  ],
+export const router = createBrowserRouter([
   {
-    basename: "/Tesutemofromfigma",
-  }
-);
+    path: "/",
+    Component: LandingPage,
+  },
+  {
+    path: "/university",
+    Component: UniversityPage,
+  },
+  {
+    path: "/municipality",
+    Component: MunicipalityPage,
+  },
+  {
+    path: "/recruitment",
+    Component: RecruitmentPage,
+  },
+  {
+    path: "/case-study",
+    Component: CaseStudyPage,
+  },
+  {
+    path: "/admin/contacts",
+    Component: ContactAdmin,
+  },
+]);

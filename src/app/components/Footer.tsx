@@ -32,19 +32,19 @@ export function Footer() {
             <h4 className="font-bold mb-4 text-lg" style={{ color: '#7e91cf' }}>Testimonial videos for</h4>
             <ul className="space-y-2 text-gray-700 text-sm">
               <li>
-                <Link to="/recruitment" className="transition-colors underline" style={{ color: '#7e91cf' }} onMouseEnter={(e) => e.currentTarget.style.opacity = '0.7'} onMouseLeave={(e) => e.currentTarget.style.opacity = '1'}>
+                <a href="/recruitment" className="transition-colors underline" style={{ color: '#7e91cf' }} onMouseEnter={(e) => e.currentTarget.style.opacity = '0.7'} onMouseLeave={(e) => e.currentTarget.style.opacity = '1'}>
                   企業採用 companies
-                </Link>
+                </a>
               </li>
               <li>
-                <Link to="/municipality" className="transition-colors underline" style={{ color: '#7e91cf' }} onMouseEnter={(e) => e.currentTarget.style.opacity = '0.7'} onMouseLeave={(e) => e.currentTarget.style.opacity = '1'}>
+                <a href="/municipality" className="transition-colors underline" style={{ color: '#7e91cf' }} onMouseEnter={(e) => e.currentTarget.style.opacity = '0.7'} onMouseLeave={(e) => e.currentTarget.style.opacity = '1'}>
                   自治体 regional towns
-                </Link>
+                </a>
               </li>
               <li>
-                <Link to="/university" className="transition-colors underline" style={{ color: '#7e91cf' }} onMouseEnter={(e) => e.currentTarget.style.opacity = '0.7'} onMouseLeave={(e) => e.currentTarget.style.opacity = '1'}>
+                <a href="/university" className="transition-colors underline" style={{ color: '#7e91cf' }} onMouseEnter={(e) => e.currentTarget.style.opacity = '0.7'} onMouseLeave={(e) => e.currentTarget.style.opacity = '1'}>
                   大学 universities
-                </Link>
+                </a>
               </li>
             </ul>
           </div>

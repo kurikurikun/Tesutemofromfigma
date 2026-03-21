@@ -1,9 +1,8 @@
 import { motion } from 'motion/react';
 import { UserPlus, TrendingUp, GraduationCap, MapPin } from 'lucide-react';
 import { ImageWithFallback } from './figma/ImageWithFallback';
-import { Link } from 'react-router';
-import recruitImage from '@/assets/5cc6f68e65b026ca288e5d61a109c4986c13bd8b.png';
-import customerImage from '@/assets/b6870bc75d96781841096514a5a6fb31fb15370a.png';
+import recruitImage from 'figma:asset/5cc6f68e65b026ca288e5d61a109c4986c13bd8b.png';
+import customerImage from 'figma:asset/b6870bc75d96781841096514a5a6fb31fb15370a.png';
 
 export function UseCases() {
   const useCases = [
@@ -98,20 +97,20 @@ export function UseCases() {
                   <p className="text-gray-600 leading-relaxed mb-6 flex-1">
                     {useCase.description}
                   </p>
-                  <Link
-                    to={useCase.link}
+                  <a
+                    href={useCase.link}
                     className="inline-flex items-center justify-center gap-2 px-6 py-3 bg-white border-2 border-[#e95228] text-[#e95228] rounded-xl font-medium hover:bg-[#e95228] hover:text-white transition-all duration-300 group/btn"
                   >
                     もっとみる
-                    <svg
-                      className="w-4 h-4 group-hover/btn:translate-x-1 transition-transform"
-                      fill="none"
-                      stroke="currentColor"
+                    <svg 
+                      className="w-4 h-4 group-hover/btn:translate-x-1 transition-transform" 
+                      fill="none" 
+                      stroke="currentColor" 
                       viewBox="0 0 24 24"
                     >
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
                     </svg>
-                  </Link>
+                  </a>
                 </div>
               </div>
             </motion.div>

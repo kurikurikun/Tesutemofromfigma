@@ -5,8 +5,7 @@ import { Contact } from '../components/Contact';
 import { Footer } from '../components/Footer';
 import Slider from 'react-slick';
 import { useRef } from 'react';
-import { Link } from 'react-router';
-import kansaiLogo from '@/assets/7dc70f324689cc10dd0bca8896ac599ce9ead2b2.png';
+import kansaiLogo from 'figma:asset/7dc70f324689cc10dd0bca8896ac599ce9ead2b2.png';
 
 export function UniversityPage() {
   const handleContactClick = (source: string) => {
@@ -110,9 +109,9 @@ export function UniversityPage() {
       {/* Header */}
       <header className="fixed top-0 left-0 right-0 bg-[#7e91cf] z-50 shadow-sm">
         <div className="max-w-7xl mx-auto px-6 lg:px-12 py-4 flex items-center justify-between">
-          <Link to="/" className="text-2xl font-bold text-white">
+          <a href="/" className="text-2xl font-bold text-white">
             TesuTemo
-          </Link>
+          </a>
           <div className="flex items-center gap-6">
             <button
               onClick={handleScrollToTop}
