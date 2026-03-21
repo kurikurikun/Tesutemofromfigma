@@ -5,6 +5,7 @@ import { Contact } from '../components/Contact';
 import { Footer } from '../components/Footer';
 import Slider from 'react-slick';
 import { useRef } from 'react';
+import { Link } from 'react-router';
 
 export function MunicipalityPage() {
   const handleContactClick = (source: string) => {
@@ -107,9 +108,9 @@ export function MunicipalityPage() {
       {/* Header */}
       <header className="fixed top-0 left-0 right-0 bg-[#7e91cf] z-50 shadow-sm">
         <div className="max-w-7xl mx-auto px-6 lg:px-12 py-4 flex items-center justify-between">
-          <a href="/" className="text-2xl font-bold text-white">
+          <Link to="/" className="text-2xl font-bold text-white">
             TesuTemo
-          </a>
+          </Link>
           <div className="flex items-center gap-6">
             <button
               onClick={handleScrollToTop}
