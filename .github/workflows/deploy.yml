@@ -21,6 +21,8 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: 20
+      - name: Patch Figma output for GitHub Pages
+        run: bash scripts/fix-for-ghpages.sh
       - run: npm install
       - run: npm run build
       - uses: actions/upload-pages-artifact@v3
